@@ -13,6 +13,9 @@ cdk deploy
 Desplegar todos los stacks
 cdk deploy --all
 
+Generar un archivo que tenga los identificadores de los servicios que se despliegan
+cdk deploy --all --outputs-file outputs.json
+
 Generar una plantilla de CloudFormation a partir del codigo TypeScript. Esto se ve reflejado en la carpeta cdk.out
 cdk synth
 
