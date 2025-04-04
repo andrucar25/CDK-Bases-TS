@@ -1,0 +1,29 @@
+instalar globalmente cdk
+npm i -g aws -cdk
+
+crear un proyecto vacio con typescript
+cdk init --language=typescript
+
+Preparar el entorno AWS para usar CDK (crea recursos iniciales y la configuracion en cloud formation). Solo se ejecuta una vez y luego ya se puede hacer los deploys
+cdk bootstrap
+
+Despliega la infraestructura definida en la aplicación CDK (stacks)
+cdk deploy
+
+Desplegar todos los stacks
+cdk deploy --all
+
+Generar una plantilla de CloudFormation a partir del codigo TypeScript. Esto se ve reflejado en la carpeta cdk.out
+cdk synth
+
+Listar los stacks locales
+cdk list 
+
+Muestra la diferencia entre local y lo desplegado
+cdk diff
+
+Revisa las configuraciones y libraries relacionadas a cdk y detecta si hay problemas
+cdk doctor
+
+Elimina el stack remoto
+cdk destroy <nombre del stack>
